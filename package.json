@@ -7,10 +7,11 @@
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.514",
+    "@remotion/google-fonts": "4.0.514",
+    "@remotion/tailwind-v4": "4.0.514",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.514",
-    "@remotion/tailwind-v4": "4.0.514",
     "tailwindcss": "4.0.0"
   },
   "devDependencies": {
@@ -27,7 +28,7 @@
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
     "render": "remotion render",
-    "render:sandbox": "remotion render --browser-executable=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell"
+    "render:sandbox": "remotion render --browser-executable=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell --ignore-certificate-errors"
   },
   "sideEffects": [
     "*.css"
