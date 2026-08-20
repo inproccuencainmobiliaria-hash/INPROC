@@ -12,6 +12,11 @@ import {
 	VIDEO_WIDTH as QUEES_WIDTH,
 	VIDEO_HEIGHT as QUEES_HEIGHT,
 } from "./IntroQueEs/theme";
+import { IntroQueEsYT } from "./IntroQueEsYT";
+import {
+	VIDEO_WIDTH as QUEES_YT_WIDTH,
+	VIDEO_HEIGHT as QUEES_YT_HEIGHT,
+} from "./IntroQueEsYT/theme";
 
 export const RemotionRoot: React.FC = () => {
 	return (
@@ -39,6 +44,14 @@ export const RemotionRoot: React.FC = () => {
 				fps={30}
 				width={QUEES_WIDTH}
 				height={QUEES_HEIGHT}
+			/>
+			<Composition
+				id="IntroQueEsYT"
+				component={IntroQueEsYT}
+				durationInFrames={120}
+				fps={30}
+				width={QUEES_YT_WIDTH}
+				height={QUEES_YT_HEIGHT}
 			/>
 		</>
 	);
