@@ -17,6 +17,11 @@ import {
 	VIDEO_WIDTH as QUEES_YT_WIDTH,
 	VIDEO_HEIGHT as QUEES_YT_HEIGHT,
 } from "./IntroQueEsYT/theme";
+import { InprocPublicidad } from "./InprocPublicidad";
+import {
+	VIDEO_WIDTH as PUBLICIDAD_WIDTH,
+	VIDEO_HEIGHT as PUBLICIDAD_HEIGHT,
+} from "./InprocPublicidad/theme";
 
 export const RemotionRoot: React.FC = () => {
 	return (
@@ -52,6 +57,14 @@ export const RemotionRoot: React.FC = () => {
 				fps={30}
 				width={QUEES_YT_WIDTH}
 				height={QUEES_YT_HEIGHT}
+			/>
+			<Composition
+				id="InprocPublicidad"
+				component={InprocPublicidad}
+				durationInFrames={540}
+				fps={30}
+				width={PUBLICIDAD_WIDTH}
+				height={PUBLICIDAD_HEIGHT}
 			/>
 		</>
 	);
