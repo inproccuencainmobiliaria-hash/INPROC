@@ -8,6 +8,9 @@ export const { fontFamily } = loadFont("normal", {
 export const COLORS = {
 	navy: "#16264F",
 	white: "#FFFFFF",
+	// Tinte claro derivado del azul corporativo, para acentos y brillos
+	// sutiles (no es una marca nueva, es el mismo #16264F aclarado).
+	skyAccent: "#7C93C9",
 } as const;
 
 export const VIDEO_WIDTH = 1080;
